@@ -1,0 +1,722 @@
+
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    background: #ffd700; /* Bright Yellow Header */
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000; /* Black logo text */
+    font-family: 'Arial', sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000; /* Black logo text */
+}
+
+nav ul {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000; /* Black navigation links */
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #444444; /* Darker hover */
+}
+
+/* HERO */
+.hero {
+    background-image: url("SolarHUB pics fbdbbmdd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+/* CONTAINER */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease-in-out;
+    animation: fadeUp 0.7s ease;
+    color: #ffffff;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #333;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    margin-bottom: 8px;
+    color: #ffd700;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+button {
+    background: #ffd700;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #e6c200;
+}
+
+/* CART TABLE */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 12px;
+    border-bottom: 1px solid #555;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* LOGO */
+.logo-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+/* MOBILE GRID FIX */
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* RATING SECTION */
+.rating-input {
+    margin: 10px 0;
+    user-select: none;
+}
+
+.stars {
+    cursor: pointer;
+    font-size: 22px;
+    color: #ffd700;
+}
+
+.review-text {
+    width: 100%;
+    min-height: 50px;
+    padding: 8px;
+    margin: 5px 0 10px;
+    resize: vertical;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.review-item {
+    background: #222;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+.review-stars {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ffd700;
+}
+
+/* VALUE SECTION */
+.value-section {
+    background: #111111;
+    padding: 50px 60px;
+    border-radius: 12px;
+    margin-top: 50px;
+}
+
+.value-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #ffd700;
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 60px;
+}
+
+.value-item .icon {
+    font-size: 26px;
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #ffd700;
+}
+
+.value-item h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 5px 0 12px;
+}
+
+.value-item p {
+    color: #aaaaaa;
+    line-height: 1.6;
+    font-size: 15px;
+    max-width: 520px;
+}
+
+@media (max-width: 768px) {
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Logo + Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Header Links Fix */
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+}
+/* ----------------------------------- */
+/* GENERAL LAYOUT & SPACING */
+/* ----------------------------------- */
+
+/* 1. Add Space at the Top (Padding to body or margin/padding to main) */
+/* This pushes the content down below the fixed/sticky header */
+/* Assuming your header is fixed/sticky, otherwise margin-top on main is enough */
+
+/* 2. Center and constrain the calculator content */
+.consumption-container {
+    max-width: 800px; /* Max width for the calculator */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    text-align: center; /* Center text elements like H2/P */
+}
+
+/* 3. Style for the subtitle/description */
+.subtitle {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #aaa;
+}
+
+/* ----------------------------------- */
+/* TABLE & INPUT STYLING */
+/* ----------------------------------- */
+
+.table-box {
+    margin-bottom: 20px;
+    border: 1px solid #444; /* Subtle border for definition */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures borders look clean */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1a; /* Darker background for the table */
+}
+
+th, td {
+    padding: 12px 8px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+thead tr {
+    background-color: #0b4c92; /* Header color */
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style for inputs and select boxes */
+.calc-row input[type="number"], .appliance-select {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #666;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for width calculation */
+}
+.appliance-select {
+    appearance: none; /* Remove default dropdown arrow (optional) */
+    cursor: pointer;
+}
+
+/* ----------------------------------- */
+/* BUTTON STYLING */
+/* ----------------------------------- */
+
+.button-group {
+    display: flex; /* Arrange buttons next to each other */
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 40px;
+}
+
+.add-btn, .remove-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-btn {
+    background-color: #4CAF50; /* Green for adding */
+    color: white;
+}
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+.remove-btn {
+    background-color: #f44336; /* Red for removing */
+    color: white;
+}
+.remove-btn:hover {
+    background-color: #da190b;
+}
+
+
+/* ----------------------------------- */
+/* RESULT AREA STYLING */
+/* ----------------------------------- */
+
+.result-area {
+    padding: 20px;
+    background-color: #333; /* Darker background for the result section */
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+#result {
+    color: #ffc107; /* Yellow color for the kWh result */
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.calc-btn {
+    background-color: #ffc107; /* SolarHub yellow */
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calc-btn:hover {
+    background-color: #e0a800;
+}
+
+/* ----------------------------------- */
+/* HEADER/NAV STYLING (Optional, for consistency) */
+/* ----------------------------------- */
+
+/* Highlight the current page */
+.active-nav {
+    color: #ffc107 !important; /* Use the SolarHub yellow */
+    font-weight: bold;
+}
+/* Styling for the CTA button leading to the calculator */
+.calculator-cta {
+    text-align: center;
+    margin: 50px 0; /* Provides space above and below the button */
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ffd700; /* Bright Yellow */
+    color: #000000;
+    text-decoration: none; /* Remove underline */
+    padding: 15px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+}
+
+.cta-button:hover {
+    background: #e6c200; /* Darker yellow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+/* ----------------------------------- */
+/* TESTIMONIALS SECTION STYLING */
+/* ----------------------------------- */
+
+.testimonials-section {
+    padding: 60px 20px;
+    background: #1a1a1a; /* Dark gray background for contrast */
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #ffd700; /* Yellow title */
+}
+
+.testimonial-grid {
+    display: grid;
+    /* Create three columns, responsive down to smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #000000; /* Pure black background for the card */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    border-top: 5px solid #ffd700; /* Accent color at the top */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(255, 215, 0, 0.15); /* Subtle yellow shadow */
+}
+
+.quote {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #cccccc; /* Light gray for quote text */
+    margin-bottom: 20px;
+    font-style: italic;
+    /* Quotation marks using CSS before/after */
+    position: relative;
+    padding: 0 10px;
+}
+
+.quote::before {
+    content: "“";
+    font-size: 3em;
+    color: #ffd700;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    opacity: 0.5;
+}
+
+.reviewer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.stars-display {
+    color: #ffd700; /* Yellow stars */
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.name {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+/* ----------------------------------- */
+/* VALUE PROPOSITION STYLING (2-COLUMN FORMAT) */
+/* ----------------------------------- */
+
+.value-section {
+    background: #1a1a1a; /* Dark gray background for contrast */
+    padding: 60px 20px; 
+    margin: 40px auto; 
+    text-align: center;
+}
+
+.value-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 50px; 
+    color: #ffd700; /* Yellow title */
+}
+
+.value-grid {
+    display: grid; 
+    /* NEW: Set to 2 columns on large screens for a spacious layout */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.value-item {
+    background: #000000; /* Pure black background for the card */
+    padding: 35px;
+    border-radius: 10px;
+    text-align: left; 
+    /* Adding a clean yellow border and subtle shadow for definition */
+    border: 1px solid #333; 
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.08); 
+    transition: all 0.3s ease-in-out;
+}
+
+.value-item:hover {
+    transform: translateY(-5px); 
+    border-color: #ffd700; /* Yellow border on hover */
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3); /* Stronger yellow shadow */
+}
+
+.value-item .icon {
+    font-size: 36px; /* Larger icon */
+    display: block; 
+    margin-bottom: 15px;
+    color: #ffd700; /* Bright yellow icons */
+}
+
+.value-item h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 5px 0 10px;
+}
+
+.value-item p {
+    color: #cccccc; 
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 900px) {
+    .value-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+        padding: 0 10px;
+    }
+}
+/* Update your existing .hero styles */
+.hero {
+    background-image: url("SolarHUB pics fbdbbmdd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+    /* Ensure content is centered, vertically and horizontally */
+    display: flex;
+    flex-direction: column; /* Stack H1 and button vertically */
+    justify-content: center;
+    align-items: center;
+    
+    /* Adding a subtle overlay to make text/button easier to read */
+    position: relative; 
+    z-index: 1;
+}
+
+/* Optional: Add a subtle overlay for better text contrast */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 2; 
+}
+
+/* Ensure the H1 and button are above the overlay */
+.hero h1, .learn-more-btn {
+    z-index: 3;
+    position: relative;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    margin-bottom: 25px; /* Space between title and button */
+}
+.learn-more-btn {
+    /* Button core styling */
+    display: inline-block;
+    background: #ffd700; /* SolarHub Yellow */
+    color: #000000;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 6px;
+    
+    /* Visual effects */
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Lifted effect */
+}
+
+.learn-more-btn:hover {
+    background: #e6c200; /* Darker yellow on hover */
+    transform: translateY(-2px); /* Slight lift */
+}
+/* Styling for the overall cart area */
+.cart-summary-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align elements to the right */
+    margin-top: 25px;
+    padding: 15px 0;
+}
+
+/* Ensure total styling is clear */
+.total {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700; /* Yellow total color */
+}
+
+/* Styling for the Checkout Button */
+.checkout-btn {
+    background: #ffd700; /* SolarHub Yellow */
+    color: #000000;
+    border: none;
+    padding: 15px 40px;
+    width: auto; /* Allow button to fit content */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.checkout-btn:hover {
+    background: #e6c200; /* Darker yellow on hover */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarHub | Cart</title>
+    <link rel="stylesheet" href="css/st.css">
+    <script src="js/app.js"></script>
+</head>
+<body onload="loadCart()">
+
+<header>
+    <div class="logo-container">
+        <img src="Images/1764946762051.jpg" alt="SolarHub Logo" class="logo-img">
+        <h1 class="logo-text">SolarHub</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="cart.html" class="active-nav">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="consumption.html">Consumption</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="container">
+    <h2>Your Cart</h2>
+
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+    </table>
+
+    <div class="cart-summary-area">
+        <div class="total">Total: <span id="total">0.00 PKR</span></div>
+        
+        <button class="checkout-btn" onclick="alert('Proceeding to Checkout!');">
+            Proceed to Checkout
+        </button>
+        </div>
+    
+</div>
+
+<footer>© 2025 SolarHub</footer>
+
+</body>
+</html>

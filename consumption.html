@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarHub | Consumption</title>
+    <link rel="stylesheet" href="css/st.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="Images/1764946762051.jpg" alt="SolarHub Logo" class="logo-img">
+        <h1 class="logo-text">SolarHub</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="consumption.html" class="active-nav">Consumption</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="consumption-container"> 
+    <h2>Energy Usage Calculator</h2>
+    <p class="subtitle">Calculate your daily electricity consumption to estimate your solar needs.</p>
+
+    <div class="table-box">
+        <table>
+            <thead>
+                <tr>
+                    <th>Appliance</th>
+                    <th>Power (Watts)</th>
+                    <th>Hours/Day</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="rows">
+                <tr class="calc-row">
+                    <td>
+                        <select class="appliance-select">
+                            <option value="60">Fan</option>
+                            <option value="100">Television</option>
+                            <option value="200">Fridge</option>
+                            <option value="1200">Microwave</option>
+                            <option value="150">Computer</option>
+                            <option value="10">Light Bulb</option>
+                            <option value="1500">Washing Machine</option>
+                            <option value="2000">Iron</option>
+                            <option value="2500">Motor</option>
+                            <option value="3000">Air conditioner</option>
+                            <option value="1000">Electric Stove</option>
+                        </select>
+                    </td>
+                    <td><input type="number" class="watts" value="60"></td>
+                    <td><input type="number" class="hours" value="1"></td>
+                    <td><input type="number" class="qty" value="1"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="button-group">
+        <button class="add-btn" onclick="addRow()">Add Row</button>
+        <button class="remove-btn" onclick="removeRow()">Remove Row</button>
+    </div>
+    
+    <div class="result-area">
+        <h2 id="result">0.00 kWh</h2>
+        <button class="calc-btn" onclick="calculateEnergy()">Calculate Usage</button>
+    </div>
+
+</main>
+<footer>
+    © 2025 SolarHub. All Rights Reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SolarHub | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/st.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="Images/1764946762051.jpg" alt="SolarHub Logo" class="logo-img">
+        <h1 class="logo-text">SolarHub</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" style="color:#0b4c92;">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="consumption.html">Consumption</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="hero">
+    <h1>Clean Energy for a Brighter Tomorrow</h1>
+    <a href="about.html" class="learn-more-btn">Learn More</a>
+</div>
+
+<div class="container">
+    <h2>Welcome to SolarHub</h2>
+    
+    <p style="margin-top:10px; line-height:1.6;">
+        Your trusted supplier for solar panels, batteries, inverters, charge controllers,
+        wiring, and complete solar system accessories. Explore our featured products below.
+    </p>
+<section class="value-section">
+    <h2 class="value-title">Why Choose SolarHub? Our Core Values</h2>
+
+    <div class="value-grid">
+
+        <div class="value-item">
+            <span class="icon"></span>
+            <h3>One-Stop Solar Marketplace</h3>
+            <p>A comprehensive platform where you can browse, compare, and purchase all solar equipment and accessories in one place, eliminating the need to navigate multiple vendors and websites.</p>
+        </div>
+
+        <div class="value-item">
+            <span class="icon"></span>
+            <h3>Verified Suppliers & Quality Assurance</h3>
+            <p>All suppliers undergo rigorous vetting to ensure authenticity, reliability, and product quality. We maintain strict standards for specifications, performance guarantees, and customer service.</p>
+        </div>
+
+        <div class="value-item">
+            <span class="icon"></span>
+            <h3>Transparent Pricing & Comparison</h3>
+            <p>Clear, upfront pricing without hidden fees or markups. Compare products side-by-side based on price, features, and performance data to make informed decisions.</p>
+        </div>
+
+        <div class="value-item">
+            <span class="icon"></span>
+            <h3>Ratings & Reviews System</h3>
+            <p>Benefit from verified customer feedback and supplier ratings. Listings include warranty information and certification details for complete peace of mind.</p>
+        </div>
+
+        <div class="value-item">
+            <span class="icon"></span>
+            <h3>Convenient & Trustworthy Purchasing</h3>
+            <p>Streamlined experience with competitive pricing by eliminating unnecessary middlemen. Our commitment to transparency builds lasting customer trust and ease of purchase.</p>
+        </div>
+
+        <div class="value-item">
+            <span class="icon"></span>
+            <h3>Dedicated Post-Purchase Support</h3>
+            <p>Assistance for warranty claims, installation guidance, and technical support. We advocate for customers, ensuring accountability and prompt issue resolution.</p>
+        </div>
+
+    </div>
+</section>
+
+
+</div>
+<div class="calculator-cta">
+    <a href="consumption.html" class="cta-button">
+        Calculate Your Energy Needs
+    </a>
+</div>
+
+
+
+    <h2 style="margin-top:40px;">Our Solar Products</h2>
+    <div class="product-grid" style="margin-top:20px;">
+
+        <!-- Repeat for all 12 products with unique IDs -->
+
+        <!-- Product 1 -->
+        <div class="product-card" id="product-1">
+            <img src="Images/1.0.jpg" alt="">
+            <h3>400W Solar Panel</h3>
+            <div class="price">18000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-1')">Submit Review</button>
+            <button onclick="addToCart('400W Solar Panel', 18000, 'Images/1.0.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" id="product-2">
+            <img src="Images/2.0.jpg" alt="">
+            <h3>600W Solar Panel</h3>
+            <div class="price">25000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-2')">Submit Review</button>
+            <button onclick="addToCart('600W Solar Panel', 25000, 'Images/2.0.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" id="product-3">
+            <img src="Images/3.jpg" alt="">
+            <h3>12V 200Ah Lithium Battery</h3>
+            <div class="price">45000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-3')">Submit Review</button>
+            <button onclick="addToCart('12V 200Ah Lithium Battery', 45000, 'Images/3.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" id="product-4">
+            <img src="Images/4.jpg" alt="">
+            <h3>12V 100Ah AGM Battery</h3>
+            <div class="price">30000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-4')">Submit Review</button>
+            <button onclick="addToCart('12V 100Ah AGM Battery', 30000, 'Images/4.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" id="product-5">
+            <img src="Images/5.jpg" alt="">
+            <h3>1500W Pure Sine Inverter</h3>
+            <div class="price">45000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-5')">Submit Review</button>
+            <button onclick="addToCart('1500W Pure Sine Inverter', 45000, 'Images/5.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" id="product-6">
+            <img src="Images/6.jpg" alt="">
+            <h3>3000W Solar Inverter</h3>
+            <div class="price">85000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-6')">Submit Review</button>
+            <button onclick="addToCart('3000W Solar Inverter', 85000, 'Images/6.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card" id="product-7">
+            <img src="Images/7.jpg" alt="">
+            <h3>MPPT Charge Controller 60A</h3>
+            <div class="price">12000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-7')">Submit Review</button>
+            <button onclick="addToCart('MPPT 60A Controller', 12000, 'Images/7.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card" id="product-8">
+            <img src="Images/8.jpg" alt="">
+            <h3>PWM Charge Controller 30A</h3>
+            <div class="price">6000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-8')">Submit Review</button>
+            <button onclick="addToCart('PWM 30A Controller', 6000, 'Images/8.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card" id="product-9">
+            <img src="Images/9.jpg" alt="">
+            <h3>Solar Extension Cable 10m</h3>
+            <div class="price">1500 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-9')">Submit Review</button>
+            <button onclick="addToCart('Solar Cable 10m', 1500, 'Images/9.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card" id="product-10">
+            <img src="Images/10.jpg" alt="">
+            <h3>MC4 Connector Set</h3>
+            <div class="price">700 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-10')">Submit Review</button>
+            <button onclick="addToCart('MC4 Connector Set', 700, 'Images/10.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product-card" id="product-11">
+            <img src="Images/11.jpg" alt="">
+            <h3>Solar Street Light 120W</h3>
+            <div class="price">6000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-11')">Submit Review</button>
+            <button onclick="addToCart('Solar Street Light 120W', 6000, 'Images/11.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product-card" id="product-12">
+            <img src="Images/12.jpg" alt="">
+            <h3>Portable Solar Charging Kit</h3>
+            <div class="price">4000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-12')">Submit Review</button>
+            <button onclick="addToCart('Portable Solar Kit', 4000, 'Images/12.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <div class="product-card" id="product-13">
+            <img src="Images/13.jpg" alt="">
+            <h3>Solar insallation stand </h3>
+            <div class="price">3500 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-12')">Submit Review</button>
+            <button onclick="addToCart('Solar insallation stand', 3500, 'Images/13.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+
+        <div class="product-card" id="product-14">
+            <img src="Images/14.jpg" alt="">
+            <h3>3-KV off grid Solar Combo</h3>
+            <div class="price">345000 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-12')">Submit Review</button>
+            <button onclick="addToCart('3-KV off grid Solar Combo', 345000, 'Images/14.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+        <div class="product-card" id="product-15">
+            <img src="Images/15.jpg" alt="">
+            <h3>Solar Cleaning Brush</h3>
+            <div class="price">2500 Rs</div>
+
+            <div class="rating-input">
+                <label>Rate this product:</label>
+                <div class="stars">
+                    <span data-value="1" class="star">&#9734;</span>
+                    <span data-value="2" class="star">&#9734;</span>
+                    <span data-value="3" class="star">&#9734;</span>
+                    <span data-value="4" class="star">&#9734;</span>
+                    <span data-value="5" class="star">&#9734;</span>
+                </div>
+            </div>
+            <textarea placeholder="Write your review..." class="review-text"></textarea>
+            <button onclick="submitReview('product-12')">Submit Review</button>
+            <button onclick="addToCart('Solar Cleaning Brush', 2500, 'Images/15.jpg')">Add to Cart</button>
+            <div class="reviews-list"></div>
+        </div>
+        
+
+    </div>
+    <section class="container testimonials-section">
+    <h2 class="section-title">What Our Customers Say</h2>
+
+    <div class="testimonial-grid">
+        
+        <div class="testimonial-card">
+            <p class="quote">"SolarHub made switching to solar incredibly easy. The transparent pricing and verified supplier information gave me total confidence in my purchase. Excellent quality panels!"</p>
+            <div class="reviewer">
+                <span class="stars-display">⭐⭐⭐⭐⭐</span>
+                <p class="name">— Ali Khan</p>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="quote">"The post-purchase support was fantastic. They helped me with a quick installation query and ensured everything was running smoothly. Highly recommend SolarHub for their service."</p>
+            <div class="reviewer">
+                <span class="stars-display">⭐⭐⭐⭐</span>
+                <p class="name">— Sara Ahmed</p>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="quote">"I loved the comparison feature. It saved me hours of research. Found the perfect battery at a competitive price, and the delivery was fast. Five stars for the marketplace!"</p>
+            <div class="reviewer">
+                <span class="stars-display">⭐⭐⭐⭐⭐</span>
+                <p class="name">— David Lee</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <hr style="margin:40px 0;">
+
+
+<footer>
+    © 2025 SolarHub. All Rights Reserved.
+</footer>
+
+</body>
+</html>
