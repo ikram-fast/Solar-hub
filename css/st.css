@@ -57,7 +57,7 @@ nav a:hover {
 
 /* HERO */
 .hero {
-    background-image: url("SolarHUB pics fbdbbmdd.jpg");
+    background-image: url("../Images/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -621,7 +621,7 @@ thead tr {
 }
 /* Update your existing .hero styles */
 .hero {
-    background-image: url("SolarHUB pics fbdbbmdd.jpg");
+    background-image: url("../Images/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -719,4 +719,5 @@ thead tr {
     background: #e6c200; /* Darker yellow on hover */
     transform: translateY(-1px);
     box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+
 }
